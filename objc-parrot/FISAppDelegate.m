@@ -17,13 +17,45 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *squawk = @"squawk";
+    squawk = [squawk uppercaseString];
+    squawk = [squawk stringByAppendingString: @"!"];
     
-    /**
-     
-     *  Write your code here!
-     
-     */
-        
+    NSLog(@"%@", squawk);
+    
+    
+    NSString *deadMen = @"Dead men";
+    NSString *tell = @"tell";
+    NSString *noTales = @"no tales";
+    
+    NSLog(@"%@ %@ %@", deadMen, tell, noTales);
+    
+    NSMutableString *pirateParrot = [[NSMutableString alloc] init];
+    
+    [pirateParrot appendString:deadMen];
+    
+    NSLog(@"%@", pirateParrot);
+    
+    [pirateParrot appendFormat:@" %@ %@!", tell, noTales];
+    
+    NSLog(@"%@", pirateParrot);
+    
+    NSString *iagoLook = @"look at me";
+    
+    NSString *iagoMolting = @"i'm molting";
+    
+    NSLog(@"%@ %@", iagoLook, iagoMolting);
+    
+    iagoLook = [iagoLook uppercaseString];
+    iagoMolting = [iagoMolting uppercaseString];
+
+    NSLog(@"%@ %@", iagoLook, iagoMolting);
+    
+    NSString *iagoShout = [NSString stringWithFormat:@"%@ %@!", iagoLook, iagoMolting];
+    
+    
+    NSLog(@"%@", iagoShout);
+    
     return YES; // Don't alter this line.
 }
 
