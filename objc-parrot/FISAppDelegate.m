@@ -40,7 +40,7 @@
     NSLog(@"%@", windInYerSails);
     
     NSLog(@"%@", wind);
-    NSString *windInYerSails = [NSString stringWithString:wind];
+    windInYerSails = [NSString stringWithString:wind];
     NSLog(@"%@", windInYerSails);
     
     windInYerSails = [windInYerSails stringByAppendingString:@" "];
